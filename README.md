@@ -4,6 +4,12 @@ An app that turn your mobile device into a deck that can be used for variety use
 ## This script is currently on proof of concept stage
 It'll later rewritten using kivy for mobile devices after all major features have been met. You can use Pydroid 3 to run the client on android deivces.
 
+
+
+https://user-images.githubusercontent.com/66292369/216779078-7896632d-d3d4-43f3-9bb9-1ed83441d1c3.mp4
+
+
+
 # Installing and Usage
 For desktop, install [python](https://www.python.org/), locate the script directory, and run `main.py`. This script include both client and server.
 
@@ -19,7 +25,7 @@ After successfully installed the requirements, simply run:
 [Linux]   python3 main.py
 ```
 
-You can close the program by closing the command line window. It is currently buggy to close it through ctrl + c.
+You can close the program by closing the command line window. It is currently buggy to close it through `ctrl + c`.
 
 ## Preset
 You can have many preset as you want by editing the `config.yaml` using [Notepad++](https://notepad-plus-plus.org/downloads/) or any other text editor of your choice, preset template and its description also available inside the file.
