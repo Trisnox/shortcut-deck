@@ -1,0 +1,122 @@
+# Why yaml you ask? Because I could insert comments on what x does and what you should fill with.
+
+# Also don't forget to refresh if you already open the app.
+# Correction: I haven't fix the reload function, you can't... yet
+
+# preset name
+# you can only have 1 of the same preset name, you can navigate on the app to change to another preset
+Universal:
+    # Have 2 different options, pyautogui and pydirectinput.
+    # Short summary can be read from https://pypi.org/project/PyDirectInput/
+    # TLDR: pydirectinput usually works better with directx applications, eg: video games. Otherwise use pyautogui
+    input: pyautogui
+
+    # Image resolution size, it's always square so you only need to supply one parameter
+    # This is likely trial and error to find the best size that fits your phone on either landscape or potrait
+    size: 200
+
+    # Numbers of button available, it has to match with total icons that you provide otherwise it'll throw an error
+    gridx: 9
+    gridy: 2
+
+    # Each icons represent icon location otherwise use default for flat icon.
+    # It should have its own function, it should contain array of keyboard shortcut, for keyboard press simply put single character for each array.
+    # For keyboard keys, please refer to https://pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys
+    # Some characters might need to be escaped by using backslash (\) or put them inside double quotation marks ("") if you're unsure
+
+    # You can also use clicks (you can mix with keyboard combination too), which will click a certain position of your screen or current position
+    # For specific position, use 'click 500x750' which will click at the 500 horizontal and 750 vertical, with 0x0 being at the corner left of screen
+    # For current position, use 'click relative'
+    # It will always hold key combination (if any) before click
+
+    # If you want to do multiple hotkeys within single button, you should use 'delay x' function
+    # Where x is equal to second, you can insert 0.1 for 100 miliseconds, or you can also insert 0 for no delay
+    # This will separate hotkeys into sequence rather than singular hotkey
+    # Note: scraped, will later return as a hotkey sequences feature
+
+    # If you attempt to use script/external programs, type "command: script.py arg1 arg2 ..." but don't add hyphen.
+    # Please do not insert script you found online as it may contain malicious code
+    # you can insert null that basically does nothing
+
+    # If you run this script inside OBS, you can access to obs functions (soon).
+    # You need to type the function like so 'obs: start streaming'.
+    # Function list:
+    # - TBA
+    icons:
+        - default:
+            - prtscr
+        # - clipboard:
+            # command: ext/share_clipboard.py
+        # TBA, pydroid does not support clipboard
+        - default:
+            - volumedown
+        - default:
+            - volumeup
+        - default:
+            - volumemute
+        - default:
+            - click relative
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+
+Krita:
+    input: pyautogui
+    size: 250
+    gridx: 4
+    gridy: 3
+    icons:
+        - brush:
+            - b
+        - lock transparent:
+            - 0
+        - eyedropper click:
+            - alt
+            - click relative
+        - transparent color:
+            - e
+        - undo:
+            - ctrl
+            - z
+        - redo:
+            - ctrl
+            - shift
+            - z
+        - flip:
+            - m
+        - reset zoom:
+            - 2
+        - reset rotation:
+            - ctrl
+            - 1
+        - null
+        # - reset view:
+            # - ctrl
+            # - 1
+            # - 2
+            # scraped, doesn't work since there is no input delay feature or separate sequence
+        - new layer:
+            - insert
+        - save:
+            - ctrl
+            - s

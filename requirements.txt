@@ -1,0 +1,4 @@
+Pillow
+pyyaml
+PyDirectInput
+PyAutoGUI
