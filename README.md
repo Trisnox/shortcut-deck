@@ -31,8 +31,8 @@ You can close the program by closing the command line window. It is currently bu
 You can have many preset as you want by editing the `config.yaml` using [Notepad++](https://notepad-plus-plus.org/downloads/) or any other text editor of your choice, preset template and its description also available inside the file.
 
 # Features
-- Send hotkey, can be either singular or sequence
-- Send mouse click, you can also supply position
+- Send hotkey, can be either singular or combination
+- Send mouse click, you can also insert position
 - Run external script/program using command line. Currently only desktop able to execute script/program
 
 # to-do
