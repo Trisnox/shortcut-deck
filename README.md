@@ -1,13 +1,11 @@
 # shortcut-deck
 An app that turn your mobile device into a deck that can be used for variety uses. It uses socket to connect both client and server. 
 
-## This script is currently on proof of concept stage
+### This script is currently on proof of concept stage
 It'll later rewritten using kivy for mobile devices after all major features have been met. You can use Pydroid 3 to run the client on android deivces.
 
 
-
 https://user-images.githubusercontent.com/66292369/216779078-7896632d-d3d4-43f3-9bb9-1ed83441d1c3.mp4
-
 
 
 # Installing and Usage
@@ -36,10 +34,10 @@ You can have many preset as you want by editing the `config.yaml` using [Notepad
 - Run external script/program using command line. Currently only desktop able to execute script/program
 
 # to-do
-- Shared script. A way for client to receive a script from server, typically python.
+- Shared script. A way for client to receive a script or command line from server, typically python scripts that allows you to integrate android API using kivy built-in module.
 - OBS integration. When the server script is run inside OBS, you can integrate with OBS API with this.
 - Sequence of hotkeys. Currently, you can only send single sequence of hotkey.
-- Rewrite on kivy. For compability, as well executable version for linux and windows, Ios and Android included.
+- Rewrite on kivy. For compability, as well executable version for linux and windows, iOS and Android included.
 - Animated icon
 - Wiki
 
